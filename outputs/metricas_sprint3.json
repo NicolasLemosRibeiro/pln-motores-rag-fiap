@@ -1,0 +1,33 @@
+{
+  "dataset": {
+    "alertas": 30,
+    "eventos": 200,
+    "holdout": 50
+  },
+  "rouge": {
+    "rouge1": 0.4188099931727674,
+    "rouge2": 0.24552951488604696,
+    "rougeL": 0.3860257624754967
+  },
+  "checklist_textos": {
+    "clareza": 1.0,
+    "precisao": 1.0,
+    "utilidade": 0.8,
+    "rastreabilidade": 1.0
+  },
+  "classificacao": {
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "f1_por_categoria": {
+      "manutenção corretiva": 1.0,
+      "manutenção preventiva": 1.0,
+      "anomalia elétrica": 1.0,
+      "anomalia mecânica": 1.0,
+      "operação normal": 1.0
+    }
+  },
+  "limitations": [
+    "Dados simulados e balanceados podem superestimar o desempenho do classificador.",
+    "Referências de resumo foram escritas para o mesmo domínio e não medem preferência de operadores reais."
+  ]
+}

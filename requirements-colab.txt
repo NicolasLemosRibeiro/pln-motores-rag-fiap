@@ -1,0 +1,7 @@
+-r requirements.txt
+# Opcionais para RAG semântico/LLM no Colab:
+sentence-transformers>=3.0
+faiss-cpu>=1.8
+transformers>=4.44
+accelerate>=0.33
+openai>=1.40

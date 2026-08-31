@@ -1,0 +1,289 @@
+[
+  {
+    "id": "TS-01",
+    "question": "O que devo verificar primeiro quando a temperatura do enrolamento aumenta?",
+    "reference_answer": "Verifique carga, entradas de ar, ventilador e limpeza das aletas; depois confirme corrente e tensão por fase.",
+    "relevant_sections": [
+      "Sobretemperatura do enrolamento"
+    ],
+    "operational_context": {
+      "tipo_equipamento": "motor",
+      "equipamento_id": "Motor MT-042",
+      "tipo_anomalia": "térmica",
+      "severidade": "moderado"
+    }
+  },
+  {
+    "id": "TS-02",
+    "question": "Quando um alerta de temperatura crítica exige parada?",
+    "reference_answer": "Em nível crítico ou com odor de isolamento, execute parada segura imediata.",
+    "relevant_sections": [
+      "Sobretemperatura do enrolamento",
+      "Segurança, bloqueio e desenergização"
+    ],
+    "operational_context": {
+      "tipo_equipamento": "motor",
+      "equipamento_id": "Motor MT-042",
+      "tipo_anomalia": "térmica",
+      "severidade": "moderado"
+    }
+  },
+  {
+    "id": "TS-03",
+    "question": "Quais causas podem provocar desequilíbrio de corrente?",
+    "reference_answer": "Tensão desequilibrada, conexão frouxa, contato degradado, problema no enrolamento ou carga anormal.",
+    "relevant_sections": [
+      "Desequilíbrio de corrente entre fases"
+    ],
+    "operational_context": {
+      "tipo_equipamento": "motor",
+      "equipamento_id": "Motor MT-042",
+      "tipo_anomalia": "elétrica",
+      "severidade": "moderado"
+    }
+  },
+  {
+    "id": "TS-04",
+    "question": "Como inspecionar conexões após corrente desequilibrada?",
+    "reference_answer": "Desenergize e bloqueie; verifique bornes, torque, aquecimento e continuidade.",
+    "relevant_sections": [
+      "Desequilíbrio de corrente entre fases",
+      "Procedimento de reaperto elétrico"
+    ],
+    "operational_context": {
+      "tipo_equipamento": "motor",
+      "equipamento_id": "Motor MT-042",
+      "tipo_anomalia": "elétrica",
+      "severidade": "moderado"
+    }
+  },
+  {
+    "id": "TS-05",
+    "question": "Posso reenergizar com resistência de isolamento abaixo de 5 MΩ?",
+    "reference_answer": "Não. O limite simulado abaixo de 5 MΩ impede retorno ao serviço e requer avaliação elétrica.",
+    "relevant_sections": [
+      "Limites elétricos",
+      "Baixa resistência de isolamento"
+    ],
+    "operational_context": {
+      "tipo_equipamento": "motor",
+      "equipamento_id": "Motor MT-042",
+      "tipo_anomalia": "elétrica",
+      "severidade": "moderado"
+    }
+  },
+  {
+    "id": "TS-06",
+    "question": "O que registrar durante o ensaio de isolamento?",
+    "reference_answer": "Registre temperatura e umidade, aplique correção prevista e compare com o histórico.",
+    "relevant_sections": [
+      "Baixa resistência de isolamento"
+    ],
+    "operational_context": {
+      "tipo_equipamento": "motor",
+      "equipamento_id": "Motor MT-042",
+      "tipo_anomalia": "elétrica",
+      "severidade": "moderado"
+    }
+  },
+  {
+    "id": "TS-07",
+    "question": "Quais são as causas comuns de vibração elevada?",
+    "reference_answer": "Desbalanceamento, desalinhamento, folga estrutural, ressonância ou degradação do mancal.",
+    "relevant_sections": [
+      "Vibração elevada no mancal"
+    ],
+    "operational_context": {
+      "tipo_equipamento": "motor",
+      "equipamento_id": "Motor MT-042",
+      "tipo_anomalia": "mecânica",
+      "severidade": "moderado"
+    }
+  },
+  {
+    "id": "TS-08",
+    "question": "Quando a vibração elevada requer parada segura?",
+    "reference_answer": "Crescimento rápido combinado a ruído metálico ou temperatura alta requer parada segura.",
+    "relevant_sections": [
+      "Vibração elevada no mancal",
+      "Limites de vibração"
+    ],
+    "operational_context": {
+      "tipo_equipamento": "motor",
+      "equipamento_id": "Motor MT-042",
+      "tipo_anomalia": "mecânica",
+      "severidade": "moderado"
+    }
+  },
+  {
+    "id": "TS-09",
+    "question": "Quais sinais indicam falha de mancal?",
+    "reference_answer": "Ruído repetitivo, frequências características, aumento de temperatura e partículas no lubrificante.",
+    "relevant_sections": [
+      "Falha de mancal"
+    ],
+    "operational_context": {
+      "tipo_equipamento": "motor",
+      "equipamento_id": "Motor MT-042",
+      "tipo_anomalia": "mecânica",
+      "severidade": "moderado"
+    }
+  },
+  {
+    "id": "TS-10",
+    "question": "Por que não devo adicionar graxa sem diagnóstico?",
+    "reference_answer": "Porque excesso de graxa também pode elevar a temperatura do mancal.",
+    "relevant_sections": [
+      "Falha de mancal",
+      "Lubrificação de mancais"
+    ],
+    "operational_context": {
+      "tipo_equipamento": "motor",
+      "equipamento_id": "Motor MT-042",
+      "tipo_anomalia": "mecânica",
+      "severidade": "moderado"
+    }
+  },
+  {
+    "id": "TS-11",
+    "question": "Como verificar desalinhamento com segurança?",
+    "reference_answer": "Desenergize o conjunto, verifique base e pé manco e meça desalinhamento paralelo e angular.",
+    "relevant_sections": [
+      "Desalinhamento do conjunto",
+      "Procedimento de verificação de alinhamento"
+    ],
+    "operational_context": {
+      "tipo_equipamento": "motor",
+      "equipamento_id": "Motor MT-042",
+      "tipo_anomalia": "mecânica",
+      "severidade": "moderado"
+    }
+  },
+  {
+    "id": "TS-12",
+    "question": "O que deve ser feito após corrigir o alinhamento?",
+    "reference_answer": "Reaperte na sequência definida, repita a medição e registre os valores finais.",
+    "relevant_sections": [
+      "Procedimento de verificação de alinhamento",
+      "Desalinhamento do conjunto"
+    ],
+    "operational_context": {
+      "tipo_equipamento": "motor",
+      "equipamento_id": "Motor MT-042",
+      "tipo_anomalia": "mecânica",
+      "severidade": "moderado"
+    }
+  },
+  {
+    "id": "TS-13",
+    "question": "Quais itens entram na inspeção preventiva semanal?",
+    "reference_answer": "Ruído, temperaturas, vibração, corrente por fase, ventilação, cabos e fixações.",
+    "relevant_sections": [
+      "Inspeção preventiva semanal"
+    ],
+    "operational_context": {
+      "tipo_equipamento": "motor",
+      "equipamento_id": "Motor MT-042",
+      "tipo_anomalia": "preventiva",
+      "severidade": "moderado"
+    }
+  },
+  {
+    "id": "TS-14",
+    "question": "Quando abrir ordem mesmo sem ultrapassar o limite?",
+    "reference_answer": "Quando houver tendência crescente em duas leituras consecutivas.",
+    "relevant_sections": [
+      "Inspeção preventiva semanal"
+    ],
+    "operational_context": {
+      "tipo_equipamento": "motor",
+      "equipamento_id": "Motor MT-042",
+      "tipo_anomalia": "preventiva",
+      "severidade": "moderado"
+    }
+  },
+  {
+    "id": "TS-15",
+    "question": "O que inclui a manutenção preventiva trimestral?",
+    "reference_answer": "Limpeza da ventilação, torque de conexões, acoplamento, alinhamento, base e revisão de tendências.",
+    "relevant_sections": [
+      "Manutenção preventiva trimestral"
+    ],
+    "operational_context": {
+      "tipo_equipamento": "motor",
+      "equipamento_id": "Motor MT-042",
+      "tipo_anomalia": "preventiva",
+      "severidade": "moderado"
+    }
+  },
+  {
+    "id": "TS-16",
+    "question": "Qual é a sequência para inspecionar a refrigeração?",
+    "reference_answer": "Autorizar, desenergizar quando necessário, inspecionar e limpar, reinstalar proteções e testar registrando temperatura e corrente.",
+    "relevant_sections": [
+      "Procedimento de inspeção do sistema de refrigeração"
+    ],
+    "operational_context": {
+      "tipo_equipamento": "motor",
+      "equipamento_id": "Motor MT-042",
+      "tipo_anomalia": "térmica",
+      "severidade": "moderado"
+    }
+  },
+  {
+    "id": "TS-17",
+    "question": "Qual torque devo usar no reaperto dos bornes?",
+    "reference_answer": "Use o torque definido para o terminal instalado; não há torque universal neste documento.",
+    "relevant_sections": [
+      "Procedimento de reaperto elétrico"
+    ],
+    "operational_context": {
+      "tipo_equipamento": "motor",
+      "equipamento_id": "Motor MT-042",
+      "tipo_anomalia": "elétrica",
+      "severidade": "moderado"
+    }
+  },
+  {
+    "id": "TS-18",
+    "question": "Como substituir um mancal sem danificar o rolamento novo?",
+    "reference_answer": "Use ferramenta adequada e aplique força somente no anel que possui ajuste.",
+    "relevant_sections": [
+      "Procedimento de substituição do mancal"
+    ],
+    "operational_context": {
+      "tipo_equipamento": "motor",
+      "equipamento_id": "Motor MT-042",
+      "tipo_anomalia": "mecânica",
+      "severidade": "moderado"
+    }
+  },
+  {
+    "id": "TS-19",
+    "question": "Quais critérios permitem retorno ao serviço após intervenção?",
+    "reference_answer": "Proteções fechadas, bloqueios formalmente removidos, testes concluídos e parâmetros estáveis abaixo dos limites.",
+    "relevant_sections": [
+      "Critérios de retorno ao serviço"
+    ],
+    "operational_context": {
+      "tipo_equipamento": "motor",
+      "equipamento_id": "Motor MT-042",
+      "tipo_anomalia": "preventiva",
+      "severidade": "moderado"
+    }
+  },
+  {
+    "id": "TS-20",
+    "question": "Quais dados garantem rastreabilidade da manutenção?",
+    "reference_answer": "Ativo, sintoma, diagnóstico, ação, componente/lote, medições antes e depois, responsáveis, horário e origem do alerta.",
+    "relevant_sections": [
+      "Registro e rastreabilidade da manutenção"
+    ],
+    "operational_context": {
+      "tipo_equipamento": "motor",
+      "equipamento_id": "Motor MT-042",
+      "tipo_anomalia": "preventiva",
+      "severidade": "moderado"
+    }
+  }
+]

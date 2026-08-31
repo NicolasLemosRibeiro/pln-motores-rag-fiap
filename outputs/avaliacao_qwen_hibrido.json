@@ -1,0 +1,513 @@
+[
+  {
+    "id": "TS-01",
+    "question": "O que devo verificar primeiro quando a temperatura do enrolamento aumenta?",
+    "reference_answer": "Verifique carga, entradas de ar, ventilador e limpeza das aletas; depois confirme corrente e tensão por fase.",
+    "answer": "Situação atual: considere o estado operacional informado.\n\nVerificações recomendadas:\n- Limites de temperatura Para esta simulação, o baseline do enrolamento é 72 °C em carga nominal. [datasheet_limites_mt.md > Limites de temperatura]\n- Sobretemperatura do enrolamento Temperatura crescente no enrolamento pode resultar de sobrecarga, ventilação obstruída, alta temperatura ambiente, desequilíbrio elétrico ou partidas excessivas. [manual_motor_mt.md > Sobretemperatura do enrolamento]\n- Verifique primeiro a carga, as entradas de ar, o ventilador e a limpeza das aletas. [manual_motor_mt.md > Sobretemperatura do enrolamento]\n\nConfiança: alta — resposta limitada às evidências recuperadas e ao contexto operacional.",
+    "generation_mode": "guardrail_fallback",
+    "validation_issues": [
+      "citação que não corresponde aos chunks recuperados"
+    ],
+    "faithfulness": 0.6,
+    "answer_relevancy": 0.4481927824336245,
+    "context_precision": 0.3333333333333333,
+    "precision_at_1": 0.0,
+    "hit_at_3": 1.0,
+    "mrr": 0.5,
+    "retrieved_sections": [
+      "Limites de temperatura",
+      "Sobretemperatura do enrolamento",
+      "Procedimento de inspeção do sistema de refrigeração"
+    ],
+    "sources": [
+      "datasheet_limites_mt.md > Limites de temperatura",
+      "manual_motor_mt.md > Sobretemperatura do enrolamento",
+      "ficha_manutencao_mt.md > Procedimento de inspeção do sistema de refrigeração"
+    ]
+  },
+  {
+    "id": "TS-02",
+    "question": "Quando um alerta de temperatura crítica exige parada?",
+    "reference_answer": "Em nível crítico ou com odor de isolamento, execute parada segura imediata.",
+    "answer": "Situação atual: Não há informação suficiente sobre um alerta de temperatura crítica específico.\n\nVerificações recomendadas: Consulte a Fonte 1 [datasheet_limites_mt.md > Limites de temperatura] para entender os limites de temperatura. Para este caso, a sobretemperatura do enrolamento é detectada entre +13 °C e +20 °C sobre o baseline de 72 °C. A Fonte 2 [manual_motor_mt.md > Sobretemperatura do enrolamento] indica que uma temperatura de 105 °C exige avaliação imediata e eventual parada segura.\n\nCritério de parada: Não há parada imediata definida para o alerta de temperatura crítica na documentação. No entanto, conforme a Fonte 2, se a temperatura permanecer acima do limite de alarme após redução de carga, programe parada para inspeção. Em nível crítico ou com odor de isolamento, execute parada segura imediata.\n\nConfiança: baixa — justificativa: A documentação não define claramente um critério de parada específico para o alerta de temperatura crítica.",
+    "generation_mode": "llm_revised",
+    "validation_issues": [],
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.7880131354352555,
+    "context_precision": 0.3333333333333333,
+    "precision_at_1": 0.0,
+    "hit_at_3": 1.0,
+    "mrr": 0.5,
+    "retrieved_sections": [
+      "Limites de temperatura",
+      "Sobretemperatura do enrolamento",
+      "Inspeção preventiva semanal"
+    ],
+    "sources": [
+      "datasheet_limites_mt.md > Limites de temperatura",
+      "manual_motor_mt.md > Sobretemperatura do enrolamento",
+      "manual_motor_mt.md > Inspeção preventiva semanal"
+    ]
+  },
+  {
+    "id": "TS-03",
+    "question": "Quais causas podem provocar desequilíbrio de corrente?",
+    "reference_answer": "Tensão desequilibrada, conexão frouxa, contato degradado, problema no enrolamento ou carga anormal.",
+    "answer": "Situação atual: Desequilíbrio de corrente entre fases pode ser causado por tensão desequilibrada, conexão frouxa, contato degradado, problema no enrolamento ou carga anormal [manual_motor_mt.md > Desequilíbrio de corrente entre fases].\n\nVerificações recomendadas: Verifique bornes, torque das conexões, sinais de aquecimento e continuidade. Verifique também a carga, as entradas de ar, o ventilador e a limpeza das aletas [manual_motor_mt.md > Desequilíbrio de corrente entre fases].\n\nCritério de parada: Não há parada imediata definida na documentação para desequilíbrio de corrente entre fases [datasheet_limites_mt.md > Limites elétricos].\n\nConfiança: alta — baseada nas fontes que listam possíveis causas sem indicar parada imediata.",
+    "generation_mode": "llm_revised",
+    "validation_issues": [],
+    "faithfulness": 0.8,
+    "answer_relevancy": 0.7582604693380641,
+    "context_precision": 0.3333333333333333,
+    "precision_at_1": 1.0,
+    "hit_at_3": 1.0,
+    "mrr": 1.0,
+    "retrieved_sections": [
+      "Desequilíbrio de corrente entre fases",
+      "Limites elétricos",
+      "Sobretemperatura do enrolamento"
+    ],
+    "sources": [
+      "manual_motor_mt.md > Desequilíbrio de corrente entre fases",
+      "datasheet_limites_mt.md > Limites elétricos",
+      "manual_motor_mt.md > Sobretemperatura do enrolamento"
+    ]
+  },
+  {
+    "id": "TS-04",
+    "question": "Como inspecionar conexões após corrente desequilibrada?",
+    "reference_answer": "Desenergize e bloqueie; verifique bornes, torque, aquecimento e continuidade.",
+    "answer": "Situação atual: considere o estado operacional informado.\n\nVerificações recomendadas:\n- Desequilíbrio de corrente entre fases Correntes de fase desequilibradas podem indicar tensão desequilibrada, conexão frouxa, contato degradado, problema no enrolamento ou carga anormal. [manual_motor_mt.md > Desequilíbrio de corrente entre fases]\n- Com o equipamento desenergizado e bloqueado, verifique bornes, torque das conexões, sinais de aquecimento e continuidade. [manual_motor_mt.md > Desequilíbrio de corrente entre fases]\n- Se o desequilíbrio persistir após corrigir a alimentação e as conexões, encaminhe o motor para ensaios elétricos do enrolamento. [manual_motor_mt.md > Desequilíbrio de corrente entre fases]\n\nConfiança: alta — resposta limitada às evidências recuperadas e ao contexto operacional.",
+    "generation_mode": "guardrail_fallback",
+    "validation_issues": [
+      "nenhuma citação documental no corpo da resposta",
+      "abstenção indevida apesar de evidência relevante recuperada"
+    ],
+    "faithfulness": 0.8,
+    "answer_relevancy": 0.521933913652114,
+    "context_precision": 0.6666666666666666,
+    "precision_at_1": 1.0,
+    "hit_at_3": 1.0,
+    "mrr": 1.0,
+    "retrieved_sections": [
+      "Desequilíbrio de corrente entre fases",
+      "Limites elétricos",
+      "Procedimento de reaperto elétrico"
+    ],
+    "sources": [
+      "manual_motor_mt.md > Desequilíbrio de corrente entre fases",
+      "datasheet_limites_mt.md > Limites elétricos",
+      "ficha_manutencao_mt.md > Procedimento de reaperto elétrico"
+    ]
+  },
+  {
+    "id": "TS-05",
+    "question": "Posso reenergizar com resistência de isolamento abaixo de 5 MΩ?",
+    "reference_answer": "Não. O limite simulado abaixo de 5 MΩ impede retorno ao serviço e requer avaliação elétrica.",
+    "answer": "Situação atual: considere o estado operacional informado.\n\nVerificações recomendadas:\n- Para esta prova de conceito, resistência de isolamento corrigida abaixo de 5 MΩ impede o retorno ao serviço; entre 5 MΩ e 20 MΩ requer investigação e acompanhamento de tendência. [datasheet_limites_mt.md > Limites elétricos]\n- Baixa resistência de isolamento Baixa resistência de isolamento pode estar associada a umidade, contaminação, deterioração térmica ou dano no cabo. [manual_motor_mt.md > Baixa resistência de isolamento]\n- Limites elétricos O desequilíbrio de corrente entre fases deve permanecer abaixo de 5%. [datasheet_limites_mt.md > Limites elétricos]\n\nConfiança: alta — resposta limitada às evidências recuperadas e ao contexto operacional.",
+    "generation_mode": "guardrail_fallback",
+    "validation_issues": [
+      "nenhuma citação documental no corpo da resposta"
+    ],
+    "faithfulness": 0.6,
+    "answer_relevancy": 0.4643566955444616,
+    "context_precision": 0.6666666666666666,
+    "precision_at_1": 1.0,
+    "hit_at_3": 1.0,
+    "mrr": 1.0,
+    "retrieved_sections": [
+      "Baixa resistência de isolamento",
+      "Limites elétricos",
+      "Critérios de retorno ao serviço"
+    ],
+    "sources": [
+      "manual_motor_mt.md > Baixa resistência de isolamento",
+      "datasheet_limites_mt.md > Limites elétricos",
+      "ficha_manutencao_mt.md > Critérios de retorno ao serviço"
+    ]
+  },
+  {
+    "id": "TS-06",
+    "question": "O que registrar durante o ensaio de isolamento?",
+    "reference_answer": "Registre temperatura e umidade, aplique correção prevista e compare com o histórico.",
+    "answer": "Situação atual: Não há informação suficiente sobre a situação atual do motor MT-042.\n\nVerificações recomendadas: \n- Realizar ensaio de resistência de isolamento com o motor desenergizado, isolado do acionamento e conforme tensão de teste definida pelo fabricante [manual_motor_mt.md > Baixa resistência de isolamento].\n- Registrar temperatura e umidade durante o ensaio [manual_motor_mt.md > Baixa resistência de isolamento].\n- Aplicar a correção prevista no procedimento [manual_motor_mt.md > Baixa resistência de isolamento].\n- Comparar resultados com o histórico [manual_motor_mt.md > Baixa resistência de isolamento].\n- Não reenergizar um motor abaixo do limite de aceitação [manual_motor_mt.md > Baixa resistência de isolamento].\n- Se houver umidade, realizar secagem controlada e repor o ensaio antes do retorno ao serviço [manual_motor_mt.md > Baixa resistência de isolamento].\n\nCritério de parada: Não há critério de parada definido na documentação para a condição de baixa resistência de isolamento [manual_motor_mt.md > Baixa resistência de isolamento].\n\nConfiança: alta — justificativa baseada nas evidências. A documentação fornece detalhes claros sobre as recomendações e procedimentos a serem seguidos durante o ensaio de isolamento.",
+    "generation_mode": "llm_revised",
+    "validation_issues": [],
+    "faithfulness": 0.8,
+    "answer_relevancy": 0.4510782652103215,
+    "context_precision": 0.3333333333333333,
+    "precision_at_1": 1.0,
+    "hit_at_3": 1.0,
+    "mrr": 1.0,
+    "retrieved_sections": [
+      "Baixa resistência de isolamento",
+      "Critérios de retorno ao serviço",
+      "Inspeção preventiva semanal"
+    ],
+    "sources": [
+      "manual_motor_mt.md > Baixa resistência de isolamento",
+      "ficha_manutencao_mt.md > Critérios de retorno ao serviço",
+      "manual_motor_mt.md > Inspeção preventiva semanal"
+    ]
+  },
+  {
+    "id": "TS-07",
+    "question": "Quais são as causas comuns de vibração elevada?",
+    "reference_answer": "Desbalanceamento, desalinhamento, folga estrutural, ressonância ou degradação do mancal.",
+    "answer": "Situação atual: considere o estado operacional informado.\n\nVerificações recomendadas:\n- Vibração elevada no mancal Vibração elevada pode ser causada por desbalanceamento, desalinhamento, folga estrutural, ressonância ou degradação do mancal. [manual_motor_mt.md > Vibração elevada no mancal]\n- Limites de vibração O baseline de vibração global é 2,2 mm/s RMS. [datasheet_limites_mt.md > Limites de vibração]\n- Desalinhamento do conjunto Desalinhamento pode produzir vibração axial, aquecimento do acoplamento, desgaste de vedação e carga adicional nos mancais. [manual_motor_mt.md > Desalinhamento do conjunto]\n\nConfiança: alta — resposta limitada às evidências recuperadas e ao contexto operacional.",
+    "generation_mode": "guardrail_fallback",
+    "validation_issues": [
+      "nenhuma citação documental no corpo da resposta"
+    ],
+    "faithfulness": 0.6,
+    "answer_relevancy": 0.7796789499018987,
+    "context_precision": 0.3333333333333333,
+    "precision_at_1": 1.0,
+    "hit_at_3": 1.0,
+    "mrr": 1.0,
+    "retrieved_sections": [
+      "Vibração elevada no mancal",
+      "Limites de vibração",
+      "Desalinhamento do conjunto"
+    ],
+    "sources": [
+      "manual_motor_mt.md > Vibração elevada no mancal",
+      "datasheet_limites_mt.md > Limites de vibração",
+      "manual_motor_mt.md > Desalinhamento do conjunto"
+    ]
+  },
+  {
+    "id": "TS-08",
+    "question": "Quando a vibração elevada requer parada segura?",
+    "reference_answer": "Crescimento rápido combinado a ruído metálico ou temperatura alta requer parada segura.",
+    "answer": "Situação atual: considere o estado operacional informado.\n\nVerificações recomendadas:\n- Em condição crítica de temperatura, vibração ou corrente, reduza a carga apenas se isso puder ser feito com segurança. [manual_motor_mt.md > Segurança, bloqueio e desenergização]\n\nCritério de parada:\n- Um crescimento rápido, ruído metálico ou temperatura simultaneamente alta requer parada segura. [manual_motor_mt.md > Vibração elevada no mancal]\n- Se houver ruído metálico, fumaça, odor de isolamento ou atuação repetida da proteção, execute parada segura e não reenergize até concluir a inspeção. [manual_motor_mt.md > Segurança, bloqueio e desenergização]\n\nConfiança: alta — resposta limitada às evidências recuperadas e ao contexto operacional.",
+    "generation_mode": "guardrail_fallback",
+    "validation_issues": [
+      "nenhuma citação documental no corpo da resposta"
+    ],
+    "faithfulness": 0.6,
+    "answer_relevancy": 0.7106870931018534,
+    "context_precision": 0.6666666666666666,
+    "precision_at_1": 1.0,
+    "hit_at_3": 1.0,
+    "mrr": 1.0,
+    "retrieved_sections": [
+      "Vibração elevada no mancal",
+      "Limites de vibração",
+      "Segurança, bloqueio e desenergização"
+    ],
+    "sources": [
+      "manual_motor_mt.md > Vibração elevada no mancal",
+      "datasheet_limites_mt.md > Limites de vibração",
+      "manual_motor_mt.md > Segurança, bloqueio e desenergização"
+    ]
+  },
+  {
+    "id": "TS-09",
+    "question": "Quais sinais indicam falha de mancal?",
+    "reference_answer": "Ruído repetitivo, frequências características, aumento de temperatura e partículas no lubrificante.",
+    "answer": "Situação atual: considere o estado operacional informado.\n\nVerificações recomendadas:\n- Falha de mancal Indícios de falha de mancal incluem ruído repetitivo, aumento de vibração em frequências características, elevação de temperatura e presença de partículas no lubrificante. [manual_motor_mt.md > Falha de mancal]\n- Quando a falha for confirmada, programe substituição com rolamento especificado, ferramentas adequadas e controle de limpeza. [manual_motor_mt.md > Falha de mancal]\n- Evite adicionar graxa indiscriminadamente, pois excesso de lubrificante também causa aquecimento. [manual_motor_mt.md > Falha de mancal]\n\nConfiança: alta — resposta limitada às evidências recuperadas e ao contexto operacional.",
+    "generation_mode": "guardrail_fallback",
+    "validation_issues": [
+      "nenhuma citação documental no corpo da resposta"
+    ],
+    "faithfulness": 0.8,
+    "answer_relevancy": 0.7683386409464794,
+    "context_precision": 0.3333333333333333,
+    "precision_at_1": 1.0,
+    "hit_at_3": 1.0,
+    "mrr": 1.0,
+    "retrieved_sections": [
+      "Falha de mancal",
+      "Vibração elevada no mancal",
+      "Limites de vibração"
+    ],
+    "sources": [
+      "manual_motor_mt.md > Falha de mancal",
+      "manual_motor_mt.md > Vibração elevada no mancal",
+      "datasheet_limites_mt.md > Limites de vibração"
+    ]
+  },
+  {
+    "id": "TS-10",
+    "question": "Por que não devo adicionar graxa sem diagnóstico?",
+    "reference_answer": "Porque excesso de graxa também pode elevar a temperatura do mancal.",
+    "answer": "Situação atual: considere o estado operacional informado.\n\nVerificações recomendadas:\n- Evite adicionar graxa indiscriminadamente, pois excesso de lubrificante também causa aquecimento. [manual_motor_mt.md > Falha de mancal]\n- Utilize a quantidade de graxa prevista e reinstale proteções. [ficha_manutencao_mt.md > Procedimento de substituição do mancal]\n- Procedimento de substituição do mancal Desenergize e bloqueie o conjunto, desacople a carga e marque a posição dos componentes. [ficha_manutencao_mt.md > Procedimento de substituição do mancal]\n\nConfiança: alta — resposta limitada às evidências recuperadas e ao contexto operacional.",
+    "generation_mode": "guardrail_fallback",
+    "validation_issues": [
+      "abstenção indevida apesar de evidência relevante recuperada"
+    ],
+    "faithfulness": 0.8,
+    "answer_relevancy": 0.4121603983861784,
+    "context_precision": 0.3333333333333333,
+    "precision_at_1": 1.0,
+    "hit_at_3": 1.0,
+    "mrr": 1.0,
+    "retrieved_sections": [
+      "Falha de mancal",
+      "Procedimento de substituição do mancal",
+      "Procedimento de verificação de alinhamento"
+    ],
+    "sources": [
+      "manual_motor_mt.md > Falha de mancal",
+      "ficha_manutencao_mt.md > Procedimento de substituição do mancal",
+      "ficha_manutencao_mt.md > Procedimento de verificação de alinhamento"
+    ]
+  },
+  {
+    "id": "TS-11",
+    "question": "Como verificar desalinhamento com segurança?",
+    "reference_answer": "Desenergize o conjunto, verifique base e pé manco e meça desalinhamento paralelo e angular.",
+    "answer": "Situação atual: considere o estado operacional informado.\n\nVerificações recomendadas:\n- Procedimento de verificação de alinhamento Confirme aperto da base, pé manco e condição do acoplamento antes de ajustar o alinhamento. [ficha_manutencao_mt.md > Procedimento de verificação de alinhamento]\n- Meça desalinhamento paralelo e angular com instrumento calibrado. [ficha_manutencao_mt.md > Procedimento de verificação de alinhamento]\n- Segurança, bloqueio e desenergização Antes de abrir a caixa de ligação, remover proteções, tocar o eixo ou executar medição de resistência de isolamento, desligue o motor, seccione todas as fontes, aplique bloqueio e etiquetagem e confirme ausência de tensão. [manual_motor_mt.md > Segurança, bloqueio e desenergização]\n\nConfiança: alta — resposta limitada às evidências recuperadas e ao contexto operacional.",
+    "generation_mode": "guardrail_fallback",
+    "validation_issues": [
+      "sustentação documental abaixo de 0,60"
+    ],
+    "faithfulness": 0.6,
+    "answer_relevancy": 0.515293357610022,
+    "context_precision": 0.3333333333333333,
+    "precision_at_1": 1.0,
+    "hit_at_3": 1.0,
+    "mrr": 1.0,
+    "retrieved_sections": [
+      "Procedimento de verificação de alinhamento",
+      "Segurança, bloqueio e desenergização",
+      "Inspeção preventiva semanal"
+    ],
+    "sources": [
+      "ficha_manutencao_mt.md > Procedimento de verificação de alinhamento",
+      "manual_motor_mt.md > Segurança, bloqueio e desenergização",
+      "manual_motor_mt.md > Inspeção preventiva semanal"
+    ]
+  },
+  {
+    "id": "TS-12",
+    "question": "O que deve ser feito após corrigir o alinhamento?",
+    "reference_answer": "Reaperte na sequência definida, repita a medição e registre os valores finais.",
+    "answer": "Situação atual: considere o estado operacional informado.\n\nVerificações recomendadas:\n- Após cada correção, reaperte os parafusos na sequência definida e repita a medição. [ficha_manutencao_mt.md > Procedimento de verificação de alinhamento]\n- Considere a condição térmica prevista para operação. [ficha_manutencao_mt.md > Procedimento de verificação de alinhamento]\n- Registre resultados antes e depois. [ficha_manutencao_mt.md > Procedimento de verificação de alinhamento]\n\nConfiança: alta — resposta limitada às evidências recuperadas e ao contexto operacional.",
+    "generation_mode": "guardrail_fallback",
+    "validation_issues": [
+      "citação que não corresponde aos chunks recuperados",
+      "sustentação documental abaixo de 0,60"
+    ],
+    "faithfulness": 0.8,
+    "answer_relevancy": 0.5595284070000587,
+    "context_precision": 0.6666666666666666,
+    "precision_at_1": 1.0,
+    "hit_at_3": 1.0,
+    "mrr": 1.0,
+    "retrieved_sections": [
+      "Procedimento de verificação de alinhamento",
+      "Critérios de retorno ao serviço",
+      "Desalinhamento do conjunto"
+    ],
+    "sources": [
+      "ficha_manutencao_mt.md > Procedimento de verificação de alinhamento",
+      "ficha_manutencao_mt.md > Critérios de retorno ao serviço",
+      "manual_motor_mt.md > Desalinhamento do conjunto"
+    ]
+  },
+  {
+    "id": "TS-13",
+    "question": "Quais itens entram na inspeção preventiva semanal?",
+    "reference_answer": "Ruído, temperaturas, vibração, corrente por fase, ventilação, cabos e fixações.",
+    "answer": "Situação atual: \nInspeção preventiva semanal é descrita no [manual_motor_mt.md > Inspeção preventiva semanal].\n\nVerificações recomendadas: \n- Registre ruído, temperatura dos mancais, temperatura do enrolamento, vibração global, corrente por fase, limpeza das entradas de ar e condição aparente de cabos e fixações.\n\nCritério de parada: \nNão há critério de parada definido para as verificações recomendadas.\n\nConfiança: alta — justificativa baseada nas evidências.",
+    "generation_mode": "llm",
+    "validation_issues": [],
+    "faithfulness": 0.75,
+    "answer_relevancy": 0.5614324315590525,
+    "context_precision": 0.3333333333333333,
+    "precision_at_1": 1.0,
+    "hit_at_3": 1.0,
+    "mrr": 1.0,
+    "retrieved_sections": [
+      "Inspeção preventiva semanal",
+      "Manutenção preventiva trimestral",
+      "Procedimento de inspeção do sistema de refrigeração"
+    ],
+    "sources": [
+      "manual_motor_mt.md > Inspeção preventiva semanal",
+      "manual_motor_mt.md > Manutenção preventiva trimestral",
+      "ficha_manutencao_mt.md > Procedimento de inspeção do sistema de refrigeração"
+    ]
+  },
+  {
+    "id": "TS-14",
+    "question": "Quando abrir ordem mesmo sem ultrapassar o limite?",
+    "reference_answer": "Quando houver tendência crescente em duas leituras consecutivas.",
+    "answer": "Situação atual: considere o estado operacional informado.\n\nVerificações recomendadas:\n- Abra ordem de avaliação quando houver tendência crescente em duas leituras consecutivas, mesmo que o limite absoluto ainda não tenha sido excedido. [manual_motor_mt.md > Inspeção preventiva semanal]\n- Excesso de graxa pode aumentar a temperatura; remova o dreno quando indicado e monitore após a aplicação. [manual_motor_mt.md > Lubrificação de mancais]\n- Com o motor desenergizado, inspecione a caixa de ligação e meça resistência de isolamento quando previsto no plano. [manual_motor_mt.md > Manutenção preventiva trimestral]\n\nConfiança: alta — resposta limitada às evidências recuperadas e ao contexto operacional.",
+    "generation_mode": "guardrail_fallback",
+    "validation_issues": [
+      "nenhuma citação documental no corpo da resposta"
+    ],
+    "faithfulness": 0.6,
+    "answer_relevancy": 0.7663096552020461,
+    "context_precision": 0.3333333333333333,
+    "precision_at_1": 1.0,
+    "hit_at_3": 1.0,
+    "mrr": 1.0,
+    "retrieved_sections": [
+      "Inspeção preventiva semanal",
+      "Lubrificação de mancais",
+      "Manutenção preventiva trimestral"
+    ],
+    "sources": [
+      "manual_motor_mt.md > Inspeção preventiva semanal",
+      "manual_motor_mt.md > Lubrificação de mancais",
+      "manual_motor_mt.md > Manutenção preventiva trimestral"
+    ]
+  },
+  {
+    "id": "TS-15",
+    "question": "O que inclui a manutenção preventiva trimestral?",
+    "reference_answer": "Limpeza da ventilação, torque de conexões, acoplamento, alinhamento, base e revisão de tendências.",
+    "answer": "Situação atual: considere o estado operacional informado.\n\nVerificações recomendadas:\n- Manutenção preventiva trimestral A rotina trimestral inclui limpeza do sistema de ventilação, verificação do torque das conexões conforme tabela aplicável, inspeção do acoplamento, avaliação de alinhamento, conferência da base e revisão das tendências de corrente, temperatura e vibração. [manual_motor_mt.md > Manutenção preventiva trimestral]\n- Com o motor desenergizado, inspecione a caixa de ligação e meça resistência de isolamento quando previsto no plano. [manual_motor_mt.md > Manutenção preventiva trimestral]\n- Compare com o baseline e com a semana anterior. [manual_motor_mt.md > Inspeção preventiva semanal]\n\nConfiança: alta — resposta limitada às evidências recuperadas e ao contexto operacional.",
+    "generation_mode": "guardrail_fallback",
+    "validation_issues": [
+      "nenhuma citação documental no corpo da resposta"
+    ],
+    "faithfulness": 0.6,
+    "answer_relevancy": 0.7472263151726565,
+    "context_precision": 0.3333333333333333,
+    "precision_at_1": 1.0,
+    "hit_at_3": 1.0,
+    "mrr": 1.0,
+    "retrieved_sections": [
+      "Manutenção preventiva trimestral",
+      "Inspeção preventiva semanal",
+      "Registro e rastreabilidade da manutenção"
+    ],
+    "sources": [
+      "manual_motor_mt.md > Manutenção preventiva trimestral",
+      "manual_motor_mt.md > Inspeção preventiva semanal",
+      "ficha_manutencao_mt.md > Registro e rastreabilidade da manutenção"
+    ]
+  },
+  {
+    "id": "TS-16",
+    "question": "Qual é a sequência para inspecionar a refrigeração?",
+    "reference_answer": "Autorizar, desenergizar quando necessário, inspecionar e limpar, reinstalar proteções e testar registrando temperatura e corrente.",
+    "answer": "Situação atual: \nSem histórico específico sobre a inspeção da refrigeração.\n\nVerificações recomendadas:\n1. Confirmar autorização de trabalho e condição operacional do processo.\n2. Desenergizar, bloquear e confirmar ausência de tensão quando houver acesso às partes internas.\n3. Inspecionar entradas de ar, aletas, carenagem, ventilador e sentido de rotação.\n4. Remover contaminantes com método que não os projete para o enrolamento.\n5. Reinstalar proteções, retirar bloqueios conforme procedimento e executar teste controlado.\n6. Registrar corrente, temperatura inicial e temperatura após 30 minutos.\n\nCritério de parada:\nNão há critério de parada definido na documentação para a condição de anomalia térmica moderada.\n\nConfiança: alta — justificativa baseada nas evidências. As verificações recomendadas estão descritas claramente em [ficha_manutencao_mt.md > Procedimento de inspeção do sistema de refrigeração] e [datasheet_limites_mt.md > Sistema de refrigeração], sem indicação de parada imediata para a condição de anomalia térmica moderada.",
+    "generation_mode": "llm",
+    "validation_issues": [],
+    "faithfulness": 0.7272727272727273,
+    "answer_relevancy": 0.42310327097430656,
+    "context_precision": 0.3333333333333333,
+    "precision_at_1": 1.0,
+    "hit_at_3": 1.0,
+    "mrr": 1.0,
+    "retrieved_sections": [
+      "Procedimento de inspeção do sistema de refrigeração",
+      "Sistema de refrigeração",
+      "Procedimento de reaperto elétrico"
+    ],
+    "sources": [
+      "ficha_manutencao_mt.md > Procedimento de inspeção do sistema de refrigeração",
+      "datasheet_limites_mt.md > Sistema de refrigeração",
+      "ficha_manutencao_mt.md > Procedimento de reaperto elétrico"
+    ]
+  },
+  {
+    "id": "TS-17",
+    "question": "Qual torque devo usar no reaperto dos bornes?",
+    "reference_answer": "Use o torque definido para o terminal instalado; não há torque universal neste documento.",
+    "answer": "Situação atual: considere o estado operacional informado.\n\nVerificações recomendadas:\n- Procedimento de reaperto elétrico O reaperto deve ocorrer com o circuito desenergizado, bloqueado e testado. [ficha_manutencao_mt.md > Procedimento de reaperto elétrico]\n- Use ferramenta calibrada e o torque definido para o terminal instalado; este documento de demonstração não fornece um torque universal. [ficha_manutencao_mt.md > Procedimento de reaperto elétrico]\n- Depois do reaperto, registre os valores de resistência entre conexões quando aplicável e acompanhe corrente e temperatura nas três fases durante o retorno controlado. [ficha_manutencao_mt.md > Procedimento de reaperto elétrico]\n\nConfiança: alta — resposta limitada às evidências recuperadas e ao contexto operacional.",
+    "generation_mode": "guardrail_fallback",
+    "validation_issues": [
+      "citação que não corresponde aos chunks recuperados"
+    ],
+    "faithfulness": 0.8,
+    "answer_relevancy": 0.5959493109430025,
+    "context_precision": 0.3333333333333333,
+    "precision_at_1": 1.0,
+    "hit_at_3": 1.0,
+    "mrr": 1.0,
+    "retrieved_sections": [
+      "Procedimento de reaperto elétrico",
+      "Sistema de refrigeração",
+      "Segurança, bloqueio e desenergização"
+    ],
+    "sources": [
+      "ficha_manutencao_mt.md > Procedimento de reaperto elétrico",
+      "datasheet_limites_mt.md > Sistema de refrigeração",
+      "manual_motor_mt.md > Segurança, bloqueio e desenergização"
+    ]
+  },
+  {
+    "id": "TS-18",
+    "question": "Como substituir um mancal sem danificar o rolamento novo?",
+    "reference_answer": "Use ferramenta adequada e aplique força somente no anel que possui ajuste.",
+    "answer": "Situação atual: considere o estado operacional informado.\n\nVerificações recomendadas:\n- Remova o rolamento com ferramenta apropriada, sem transmitir esforço pelos elementos rolantes. [ficha_manutencao_mt.md > Procedimento de substituição do mancal]\n- Procedimento de substituição do mancal Desenergize e bloqueie o conjunto, desacople a carga e marque a posição dos componentes. [ficha_manutencao_mt.md > Procedimento de substituição do mancal]\n- Instale o rolamento especificado aplicando força somente no anel ajustado. [ficha_manutencao_mt.md > Procedimento de substituição do mancal]\n\nConfiança: alta — resposta limitada às evidências recuperadas e ao contexto operacional.",
+    "generation_mode": "guardrail_fallback",
+    "validation_issues": [
+      "citação que não corresponde aos chunks recuperados",
+      "sustentação documental abaixo de 0,60"
+    ],
+    "faithfulness": 0.8,
+    "answer_relevancy": 0.32878900359870855,
+    "context_precision": 0.3333333333333333,
+    "precision_at_1": 1.0,
+    "hit_at_3": 1.0,
+    "mrr": 1.0,
+    "retrieved_sections": [
+      "Procedimento de substituição do mancal",
+      "Falha de mancal",
+      "Sistema de refrigeração"
+    ],
+    "sources": [
+      "ficha_manutencao_mt.md > Procedimento de substituição do mancal",
+      "manual_motor_mt.md > Falha de mancal",
+      "datasheet_limites_mt.md > Sistema de refrigeração"
+    ]
+  },
+  {
+    "id": "TS-19",
+    "question": "Quais critérios permitem retorno ao serviço após intervenção?",
+    "reference_answer": "Proteções fechadas, bloqueios formalmente removidos, testes concluídos e parâmetros estáveis abaixo dos limites.",
+    "answer": "Situação atual: considere o estado operacional informado.\n\nVerificações recomendadas:\n- Critérios de retorno ao serviço O motor só pode retornar ao serviço após fechamento das proteções, remoção formal dos bloqueios, inspeção da área e conclusão dos testes previstos. [ficha_manutencao_mt.md > Critérios de retorno ao serviço]\n- Registre responsável, data, medições e liberações. [ficha_manutencao_mt.md > Critérios de retorno ao serviço]\n- Para intervenção elétrica, confirme equilíbrio entre fases e aceitação da resistência de isolamento. [ficha_manutencao_mt.md > Critérios de retorno ao serviço]\n\nConfiança: alta — resposta limitada às evidências recuperadas e ao contexto operacional.",
+    "generation_mode": "guardrail_fallback",
+    "validation_issues": [
+      "nenhuma citação documental no corpo da resposta"
+    ],
+    "faithfulness": 0.8,
+    "answer_relevancy": 0.19989652101285937,
+    "context_precision": 0.3333333333333333,
+    "precision_at_1": 1.0,
+    "hit_at_3": 1.0,
+    "mrr": 1.0,
+    "retrieved_sections": [
+      "Critérios de retorno ao serviço",
+      "Manutenção preventiva trimestral",
+      "Inspeção preventiva semanal"
+    ],
+    "sources": [
+      "ficha_manutencao_mt.md > Critérios de retorno ao serviço",
+      "manual_motor_mt.md > Manutenção preventiva trimestral",
+      "manual_motor_mt.md > Inspeção preventiva semanal"
+    ]
+  },
+  {
+    "id": "TS-20",
+    "question": "Quais dados garantem rastreabilidade da manutenção?",
+    "reference_answer": "Ativo, sintoma, diagnóstico, ação, componente/lote, medições antes e depois, responsáveis, horário e origem do alerta.",
+    "answer": "Situação atual: \nSem histórico específico de rastreabilidade da manutenção.\n\nVerificações recomendadas:\n- Consultar a ficha de manutenção do motor MT-042 no arquivo [ficha_manutencao_mt.md > Registro e rastreabilidade da manutenção] para verificar se há registros detalhados de cada ordem de manutenção, incluindo ativo, sintoma, diagnóstico, ação executada, componente, lote, medições antes e depois, responsáveis e horário.\n\nCritério de parada:\n- Não há critério de parada definido na documentação fornecida.\n\nConfiança: média — justificativa baseada nas evidências. A documentação menciona a necessidade de rastreabilidade, mas não fornece exemplos práticos ou critérios específicos para a implementação dessa rastreabilidade.",
+    "generation_mode": "llm",
+    "validation_issues": [],
+    "faithfulness": 0.6,
+    "answer_relevancy": 0.6415112146203918,
+    "context_precision": 0.3333333333333333,
+    "precision_at_1": 1.0,
+    "hit_at_3": 1.0,
+    "mrr": 1.0,
+    "retrieved_sections": [
+      "Registro e rastreabilidade da manutenção",
+      "Manutenção preventiva trimestral",
+      "Inspeção preventiva semanal"
+    ],
+    "sources": [
+      "ficha_manutencao_mt.md > Registro e rastreabilidade da manutenção",
+      "manual_motor_mt.md > Manutenção preventiva trimestral",
+      "manual_motor_mt.md > Inspeção preventiva semanal"
+    ]
+  }
+]

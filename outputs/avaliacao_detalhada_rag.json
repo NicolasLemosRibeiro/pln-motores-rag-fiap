@@ -1,0 +1,406 @@
+{
+  "retrieval": [
+    {
+      "id": "TS-01",
+      "precision_at_k": 0.25,
+      "precision_at_1": 1.0,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "retrieved": [
+        "Sobretemperatura do enrolamento",
+        "Inspeção preventiva semanal",
+        "Sistema de refrigeração",
+        "Procedimento de inspeção do sistema de refrigeração"
+      ]
+    },
+    {
+      "id": "TS-02",
+      "precision_at_k": 0.25,
+      "precision_at_1": 0.0,
+      "hit_at_k": 1.0,
+      "mrr": 0.5,
+      "retrieved": [
+        "Limites de temperatura",
+        "Segurança, bloqueio e desenergização",
+        "Limites de vibração",
+        "Procedimento de reaperto elétrico"
+      ]
+    },
+    {
+      "id": "TS-03",
+      "precision_at_k": 0.25,
+      "precision_at_1": 1.0,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "retrieved": [
+        "Desequilíbrio de corrente entre fases",
+        "Limites elétricos",
+        "Segurança, bloqueio e desenergização",
+        "Sobretemperatura do enrolamento"
+      ]
+    },
+    {
+      "id": "TS-04",
+      "precision_at_k": 0.25,
+      "precision_at_1": 1.0,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "retrieved": [
+        "Desequilíbrio de corrente entre fases",
+        "Procedimento de inspeção do sistema de refrigeração",
+        "Limites elétricos",
+        "Manutenção preventiva trimestral"
+      ]
+    },
+    {
+      "id": "TS-05",
+      "precision_at_k": 0.5,
+      "precision_at_1": 1.0,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "retrieved": [
+        "Limites elétricos",
+        "Baixa resistência de isolamento",
+        "Critérios de retorno ao serviço",
+        "Manutenção preventiva trimestral"
+      ]
+    },
+    {
+      "id": "TS-06",
+      "precision_at_k": 0.25,
+      "precision_at_1": 1.0,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "retrieved": [
+        "Baixa resistência de isolamento",
+        "Segurança, bloqueio e desenergização",
+        "Critérios de retorno ao serviço",
+        "Limites elétricos"
+      ]
+    },
+    {
+      "id": "TS-07",
+      "precision_at_k": 0.25,
+      "precision_at_1": 1.0,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "retrieved": [
+        "Vibração elevada no mancal",
+        "Limites de vibração",
+        "Segurança, bloqueio e desenergização",
+        "Critérios de retorno ao serviço"
+      ]
+    },
+    {
+      "id": "TS-08",
+      "precision_at_k": 0.25,
+      "precision_at_1": 1.0,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "retrieved": [
+        "Vibração elevada no mancal",
+        "Segurança, bloqueio e desenergização",
+        "Manutenção preventiva trimestral",
+        "Inspeção preventiva semanal"
+      ]
+    },
+    {
+      "id": "TS-09",
+      "precision_at_k": 0.25,
+      "precision_at_1": 1.0,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "retrieved": [
+        "Falha de mancal",
+        "Vibração elevada no mancal",
+        "Procedimento de substituição do mancal",
+        "Dados nominais simulados"
+      ]
+    },
+    {
+      "id": "TS-10",
+      "precision_at_k": 0.25,
+      "precision_at_1": 0.0,
+      "hit_at_k": 1.0,
+      "mrr": 0.3333333333333333,
+      "retrieved": [
+        "Sistema de refrigeração",
+        "Procedimento de verificação de alinhamento",
+        "Falha de mancal",
+        "Procedimento de substituição do mancal"
+      ]
+    },
+    {
+      "id": "TS-11",
+      "precision_at_k": 0.5,
+      "precision_at_1": 0.0,
+      "hit_at_k": 1.0,
+      "mrr": 0.5,
+      "retrieved": [
+        "Segurança, bloqueio e desenergização",
+        "Desalinhamento do conjunto",
+        "Procedimento de verificação de alinhamento",
+        "Vibração elevada no mancal"
+      ]
+    },
+    {
+      "id": "TS-12",
+      "precision_at_k": 0.5,
+      "precision_at_1": 1.0,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "retrieved": [
+        "Procedimento de verificação de alinhamento",
+        "Desalinhamento do conjunto",
+        "Critérios de retorno ao serviço",
+        "Segurança, bloqueio e desenergização"
+      ]
+    },
+    {
+      "id": "TS-13",
+      "precision_at_k": 0.25,
+      "precision_at_1": 1.0,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "retrieved": [
+        "Inspeção preventiva semanal",
+        "Manutenção preventiva trimestral",
+        "Lubrificação de mancais",
+        "Limites elétricos"
+      ]
+    },
+    {
+      "id": "TS-14",
+      "precision_at_k": 0.25,
+      "precision_at_1": 1.0,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "retrieved": [
+        "Inspeção preventiva semanal",
+        "Manutenção preventiva trimestral",
+        "Lubrificação de mancais",
+        "Registro e rastreabilidade da manutenção"
+      ]
+    },
+    {
+      "id": "TS-15",
+      "precision_at_k": 0.25,
+      "precision_at_1": 1.0,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "retrieved": [
+        "Manutenção preventiva trimestral",
+        "Inspeção preventiva semanal",
+        "Registro e rastreabilidade da manutenção",
+        "Ficha de Manutenção - Motores MT Série 040"
+      ]
+    },
+    {
+      "id": "TS-16",
+      "precision_at_k": 0.25,
+      "precision_at_1": 1.0,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "retrieved": [
+        "Procedimento de inspeção do sistema de refrigeração",
+        "Sistema de refrigeração",
+        "Procedimento de verificação de alinhamento",
+        "Limites de vibração"
+      ]
+    },
+    {
+      "id": "TS-17",
+      "precision_at_k": 0.25,
+      "precision_at_1": 1.0,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "retrieved": [
+        "Procedimento de reaperto elétrico",
+        "Desequilíbrio de corrente entre fases",
+        "Manutenção preventiva trimestral",
+        "Critérios de retorno ao serviço"
+      ]
+    },
+    {
+      "id": "TS-18",
+      "precision_at_k": 0.25,
+      "precision_at_1": 1.0,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "retrieved": [
+        "Procedimento de substituição do mancal",
+        "Falha de mancal",
+        "Vibração elevada no mancal",
+        "Dados nominais simulados"
+      ]
+    },
+    {
+      "id": "TS-19",
+      "precision_at_k": 0.25,
+      "precision_at_1": 1.0,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "retrieved": [
+        "Critérios de retorno ao serviço",
+        "Lubrificação de mancais",
+        "Limites elétricos",
+        "Baixa resistência de isolamento"
+      ]
+    },
+    {
+      "id": "TS-20",
+      "precision_at_k": 0.25,
+      "precision_at_1": 1.0,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "retrieved": [
+        "Registro e rastreabilidade da manutenção",
+        "Manutenção preventiva trimestral",
+        "Dados nominais simulados",
+        "Ficha de Manutenção - Motores MT Série 040"
+      ]
+    }
+  ],
+  "assistant": [
+    {
+      "id": "TS-01",
+      "faithfulness": 0.75,
+      "answer_relevancy": 0.45825831841129755,
+      "context_precision": 0.25,
+      "answer": "Sobretemperatura do enrolamento Temperatura crescente no enrolamento pode resultar de sobrecarga, ventilação obstruída, alta temperatura ambiente, desequilíbrio elétrico ou partidas excessivas. Verifique primeiro a carga, as entradas de ar, o ventilador e a limpeza das aletas. Se a temperatura permanecer acima do limite de alarme após redução de carga, programe parada para inspeção. [Fonte: manual_motor_mt.md > Sobretemperatura do enrolamento] Confiança: média — a orientação está apoiada diretamente no trecho recuperado e considera a severidade moderado."
+    },
+    {
+      "id": "TS-02",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3798857949800154,
+      "context_precision": 0.25,
+      "answer": "A temperatura absoluta de 105 °C exige avaliação imediata e eventual parada segura. Limites de temperatura Para esta simulação, o baseline do enrolamento é 72 °C em carga nominal. O alerta leve ocorre entre +8 °C e +12 °C sobre o baseline, o moderado entre +13 °C e +20 °C e o crítico acima de +20 °C. [Fonte: datasheet_limites_mt.md > Limites de temperatura] Confiança: alta — a orientação está apoiada diretamente no trecho recuperado e considera a severidade moderado."
+    },
+    {
+      "id": "TS-03",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7960345701302927,
+      "context_precision": 0.25,
+      "answer": "Desequilíbrio de corrente entre fases Correntes de fase desequilibradas podem indicar tensão desequilibrada, conexão frouxa, contato degradado, problema no enrolamento ou carga anormal. Registre corrente e tensão nas três fases sob condição estável. Não conclua defeito do enrolamento apenas pela corrente. [Fonte: manual_motor_mt.md > Desequilíbrio de corrente entre fases] Confiança: alta — a orientação está apoiada diretamente no trecho recuperado e considera a severidade moderado."
+    },
+    {
+      "id": "TS-04",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.25,
+      "answer": "Desequilíbrio de corrente entre fases Correntes de fase desequilibradas podem indicar tensão desequilibrada, conexão frouxa, contato degradado, problema no enrolamento ou carga anormal. Se o desequilíbrio persistir após corrigir a alimentação e as conexões, encaminhe o motor para ensaios elétricos do enrolamento. Registre corrente e tensão nas três fases sob condição estável. [Fonte: manual_motor_mt.md > Desequilíbrio de corrente entre fases] Confiança: alta — a orientação está apoiada diretamente no trecho recuperado e considera a severidade moderado."
+    },
+    {
+      "id": "TS-05",
+      "faithfulness": 0.75,
+      "answer_relevancy": 0.4782770977397468,
+      "context_precision": 0.5,
+      "answer": "Para esta prova de conceito, resistência de isolamento corrigida abaixo de 5 MΩ impede o retorno ao serviço; entre 5 MΩ e 20 MΩ requer investigação e acompanhamento de tendência. Limites elétricos O desequilíbrio de corrente entre fases deve permanecer abaixo de 5%. Entre 5% e 10%, verificar carga, tensão e conexões. [Fonte: datasheet_limites_mt.md > Limites elétricos] Confiança: alta — a orientação está apoiada diretamente no trecho recuperado e considera a severidade moderado."
+    },
+    {
+      "id": "TS-06",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7613458844187375,
+      "context_precision": 0.25,
+      "answer": "O ensaio deve ser executado com o motor desenergizado, isolado do acionamento e conforme tensão de teste definida pelo fabricante. Registre temperatura e umidade durante o ensaio, aplique a correção prevista no procedimento e compare com o histórico. Baixa resistência de isolamento Baixa resistência de isolamento pode estar associada a umidade, contaminação, deterioração térmica ou dano no cabo. [Fonte: manual_motor_mt.md > Baixa resistência de isolamento] Confiança: alta — a orientação está apoiada diretamente no trecho recuperado e considera a severidade moderado."
+    },
+    {
+      "id": "TS-07",
+      "faithfulness": 0.75,
+      "answer_relevancy": 0.7806749974404082,
+      "context_precision": 0.25,
+      "answer": "Vibração elevada no mancal Vibração elevada pode ser causada por desbalanceamento, desalinhamento, folga estrutural, ressonância ou degradação do mancal. Após qualquer correção, confirme a redução da vibração em condição operacional equivalente. Compare os lados acoplado e não acoplado e observe componentes axial, horizontal e vertical. [Fonte: manual_motor_mt.md > Vibração elevada no mancal] Confiança: alta — a orientação está apoiada diretamente no trecho recuperado e considera a severidade moderado."
+    },
+    {
+      "id": "TS-08",
+      "faithfulness": 0.75,
+      "answer_relevancy": 0.695567145031419,
+      "context_precision": 0.25,
+      "answer": "Um crescimento rápido, ruído metálico ou temperatura simultaneamente alta requer parada segura. Vibração elevada no mancal Vibração elevada pode ser causada por desbalanceamento, desalinhamento, folga estrutural, ressonância ou degradação do mancal. Após qualquer correção, confirme a redução da vibração em condição operacional equivalente. [Fonte: manual_motor_mt.md > Vibração elevada no mancal] Confiança: alta — a orientação está apoiada diretamente no trecho recuperado e considera a severidade moderado."
+    },
+    {
+      "id": "TS-09",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7858403337605417,
+      "context_precision": 0.25,
+      "answer": "Falha de mancal Indícios de falha de mancal incluem ruído repetitivo, aumento de vibração em frequências características, elevação de temperatura e presença de partículas no lubrificante. Quando a falha for confirmada, programe substituição com rolamento especificado, ferramentas adequadas e controle de limpeza. Evite adicionar graxa indiscriminadamente, pois excesso de lubrificante também causa aquecimento. [Fonte: manual_motor_mt.md > Falha de mancal] Confiança: alta — a orientação está apoiada diretamente no trecho recuperado e considera a severidade moderado."
+    },
+    {
+      "id": "TS-10",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.016569276576664176,
+      "context_precision": 0.25,
+      "answer": "Não use ar comprimido de modo que direcione contaminantes para o interior do enrolamento. Sistema de refrigeração O ventilador deve girar livremente, no sentido correto e sem pás danificadas. Entradas de ar e aletas devem estar limpas. [Fonte: datasheet_limites_mt.md > Sistema de refrigeração] Confiança: média — a orientação está apoiada diretamente no trecho recuperado e considera a severidade moderado."
+    },
+    {
+      "id": "TS-11",
+      "faithfulness": 0.75,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.5,
+      "answer": "Em condição crítica de temperatura, vibração ou corrente, reduza a carga apenas se isso puder ser feito com segurança. Segurança, bloqueio e desenergização Antes de abrir a caixa de ligação, remover proteções, tocar o eixo ou executar medição de resistência de isolamento, desligue o motor, seccione todas as fontes, aplique bloqueio e etiquetagem e confirme ausência de tensão. Aguarde a parada completa do eixo. [Fonte: manual_motor_mt.md > Segurança, bloqueio e desenergização] Confiança: média — a orientação está apoiada diretamente no trecho recuperado e considera a severidade moderado."
+    },
+    {
+      "id": "TS-12",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4753508019200201,
+      "context_precision": 0.5,
+      "answer": "Procedimento de verificação de alinhamento Confirme aperto da base, pé manco e condição do acoplamento antes de ajustar o alinhamento. Após cada correção, reaperte os parafusos na sequência definida e repita a medição. Meça desalinhamento paralelo e angular com instrumento calibrado. [Fonte: ficha_manutencao_mt.md > Procedimento de verificação de alinhamento] Confiança: média — a orientação está apoiada diretamente no trecho recuperado e considera a severidade moderado."
+    },
+    {
+      "id": "TS-13",
+      "faithfulness": 0.75,
+      "answer_relevancy": 0.5585319907588342,
+      "context_precision": 0.25,
+      "answer": "Inspeção preventiva semanal Na inspeção semanal, registre ruído, temperatura dos mancais, temperatura do enrolamento, vibração global, corrente por fase, limpeza das entradas de ar e condição aparente de cabos e fixações. Compare com o baseline e com a semana anterior. Abra ordem de avaliação quando houver tendência crescente em duas leituras consecutivas, mesmo que o limite absoluto ainda não tenha sido excedido. [Fonte: manual_motor_mt.md > Inspeção preventiva semanal] Confiança: alta — a orientação está apoiada diretamente no trecho recuperado e considera a severidade moderado."
+    },
+    {
+      "id": "TS-14",
+      "faithfulness": 0.75,
+      "answer_relevancy": 0.7638583986584708,
+      "context_precision": 0.25,
+      "answer": "Abra ordem de avaliação quando houver tendência crescente em duas leituras consecutivas, mesmo que o limite absoluto ainda não tenha sido excedido. Compare com o baseline e com a semana anterior. Inspeção preventiva semanal Na inspeção semanal, registre ruído, temperatura dos mancais, temperatura do enrolamento, vibração global, corrente por fase, limpeza das entradas de ar e condição aparente de cabos e fixações. [Fonte: manual_motor_mt.md > Inspeção preventiva semanal] Confiança: média — a orientação está apoiada diretamente no trecho recuperado e considera a severidade moderado."
+    },
+    {
+      "id": "TS-15",
+      "faithfulness": 0.75,
+      "answer_relevancy": 0.7561733355592128,
+      "context_precision": 0.25,
+      "answer": "Manutenção preventiva trimestral A rotina trimestral inclui limpeza do sistema de ventilação, verificação do torque das conexões conforme tabela aplicável, inspeção do acoplamento, avaliação de alinhamento, conferência da base e revisão das tendências de corrente, temperatura e vibração. Com o motor desenergizado, inspecione a caixa de ligação e meça resistência de isolamento quando previsto no plano. Atualize o histórico do ativo e registre qualquer componente substituído. [Fonte: manual_motor_mt.md > Manutenção preventiva trimestral] Confiança: alta — a orientação está apoiada diretamente no trecho recuperado e considera a severidade moderado."
+    },
+    {
+      "id": "TS-16",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.06096031625775887,
+      "context_precision": 0.25,
+      "answer": "Procedimento de inspeção do sistema de refrigeração 1. Inspecionar entradas de ar, aletas, carenagem, ventilador e sentido de rotação. Remover contaminantes com método que não os projete para o enrolamento. [Fonte: ficha_manutencao_mt.md > Procedimento de inspeção do sistema de refrigeração] Confiança: média — a orientação está apoiada diretamente no trecho recuperado e considera a severidade moderado."
+    },
+    {
+      "id": "TS-17",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.609382442720275,
+      "context_precision": 0.25,
+      "answer": "Procedimento de reaperto elétrico O reaperto deve ocorrer com o circuito desenergizado, bloqueado e testado. Use ferramenta calibrada e o torque definido para o terminal instalado; este documento de demonstração não fornece um torque universal. Depois do reaperto, registre os valores de resistência entre conexões quando aplicável e acompanhe corrente e temperatura nas três fases durante o retorno controlado. [Fonte: ficha_manutencao_mt.md > Procedimento de reaperto elétrico] Confiança: alta — a orientação está apoiada diretamente no trecho recuperado e considera a severidade moderado."
+    },
+    {
+      "id": "TS-18",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3408899554798871,
+      "context_precision": 0.25,
+      "answer": "Remova o rolamento com ferramenta apropriada, sem transmitir esforço pelos elementos rolantes. Procedimento de substituição do mancal Desenergize e bloqueie o conjunto, desacople a carga e marque a posição dos componentes. Instale o rolamento especificado aplicando força somente no anel ajustado. [Fonte: ficha_manutencao_mt.md > Procedimento de substituição do mancal] Confiança: média — a orientação está apoiada diretamente no trecho recuperado e considera a severidade moderado."
+    },
+    {
+      "id": "TS-19",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.20313309872465432,
+      "context_precision": 0.25,
+      "answer": "Critérios de retorno ao serviço O motor só pode retornar ao serviço após fechamento das proteções, remoção formal dos bloqueios, inspeção da área e conclusão dos testes previstos. Para intervenção elétrica, confirme equilíbrio entre fases e aceitação da resistência de isolamento. Para intervenção mecânica, confirme alinhamento, fixações e ausência de ruído anormal. [Fonte: ficha_manutencao_mt.md > Critérios de retorno ao serviço] Confiança: alta — a orientação está apoiada diretamente no trecho recuperado e considera a severidade moderado."
+    },
+    {
+      "id": "TS-20",
+      "faithfulness": 0.75,
+      "answer_relevancy": 0.7865201451569431,
+      "context_precision": 0.25,
+      "answer": "Registro e rastreabilidade da manutenção Cada ordem deve registrar ativo, sintoma, diagnóstico, ação executada, componente e lote quando aplicável, medições antes e depois, responsáveis e horário. Anexe a origem do alerta ou sensor que motivou a intervenção. Não encerre a ordem apenas porque o alarme desapareceu. [Fonte: ficha_manutencao_mt.md > Registro e rastreabilidade da manutenção] Confiança: alta — a orientação está apoiada diretamente no trecho recuperado e considera a severidade moderado."
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "modelo": "Qwen/Qwen2.5-3B-Instruct",
+  "retriever": "sentence-transformers+faiss",
+  "arquitetura": "LLM com validação e fallback rastreável",
+  "cenarios": [
+    {
+      "cenario": "anomalia elétrica",
+      "contexto": {
+        "tipo_equipamento": "motor",
+        "equipamento_id": "Motor MT-042",
+        "tipo_anomalia": "elétrica",
+        "sensor_tipo": "corrente_fase",
+        "severidade": "moderado",
+        "resumo_alerta": "Alerta moderado detectado no Motor MT-042. A corrente apresentou desequilíbrio de 12% no sensor CUR-042-1."
+      },
+      "answer": "Situação atual: Alerta moderado detectado no Motor MT-042. A corrente apresentou desequilíbrio de 12% no sensor CUR-042-1.\n\nVerificações recomendadas:\n- Desequilíbrio de corrente entre fases Correntes de fase desequilibradas podem indicar tensão desequilibrada, conexão frouxa, contato degradado, problema no enrolamento ou carga anormal. [manual_motor_mt.md > Desequilíbrio de corrente entre fases]\n- Entre 5% e 10%, verificar carga, tensão e conexões. [datasheet_limites_mt.md > Limites elétricos]\n- Depois do reaperto, registre os valores de resistência entre conexões quando aplicável e acompanhe corrente e temperatura nas três fases durante o retorno controlado. [ficha_manutencao_mt.md > Procedimento de reaperto elétrico]\n\nCritério de parada:\n- Acima de 10%, reduzir a carga quando seguro e programar inspeção elétrica imediata. [datasheet_limites_mt.md > Limites elétricos]\n\nConfiança: alta — resposta limitada às evidências recuperadas e ao contexto operacional.",
+      "sources": [
+        "manual_motor_mt.md > Desequilíbrio de corrente entre fases",
+        "datasheet_limites_mt.md > Limites elétricos",
+        "ficha_manutencao_mt.md > Procedimento de reaperto elétrico"
+      ],
+      "confidence": "alta",
+      "faithfulness_proxy": 0.8571428571428571,
+      "generation_mode": "guardrail_fallback",
+      "validation_issues": [
+        "nenhuma citação documental no corpo da resposta",
+        "sustentação documental abaixo de 0,60"
+      ]
+    },
+    {
+      "cenario": "anomalia mecânica",
+      "contexto": {
+        "tipo_equipamento": "motor",
+        "equipamento_id": "Motor MT-042",
+        "tipo_anomalia": "mecânica",
+        "sensor_tipo": "vibracao_mancal",
+        "severidade": "critico",
+        "resumo_alerta": "Alerta crítico no Motor MT-042: vibração de 8,1 mm/s RMS no sensor VIB-042-1, acompanhada de ruído metálico."
+      },
+      "answer": "Situação atual: Alerta crítico no Motor MT-042: vibração de 8,1 mm/s RMS no sensor VIB-042-1, acompanhada de ruído metálico.\n\nVerificações recomendadas:\n- Vibração elevada no mancal Vibração elevada pode ser causada por desbalanceamento, desalinhamento, folga estrutural, ressonância ou degradação do mancal. [manual_motor_mt.md > Vibração elevada no mancal]\n- Inspecione fixações, base, acoplamento e condição do mancal. [manual_motor_mt.md > Vibração elevada no mancal]\n- Falha de mancal Indícios de falha de mancal incluem ruído repetitivo, aumento de vibração em frequências características, elevação de temperatura e presença de partículas no lubrificante. [manual_motor_mt.md > Falha de mancal]\n\nCritério de parada:\n- Um crescimento rápido, ruído metálico ou temperatura simultaneamente alta requer parada segura. [manual_motor_mt.md > Vibração elevada no mancal]\n\nConfiança: alta — resposta limitada às evidências recuperadas e ao contexto operacional.",
+      "sources": [
+        "manual_motor_mt.md > Vibração elevada no mancal",
+        "datasheet_limites_mt.md > Limites de vibração",
+        "manual_motor_mt.md > Falha de mancal"
+      ],
+      "confidence": "alta",
+      "faithfulness_proxy": 1.0,
+      "generation_mode": "guardrail_fallback",
+      "validation_issues": [
+        "contradição com critério documental obrigatório de parada segura"
+      ]
+    },
+    {
+      "cenario": "manutenção preventiva",
+      "contexto": {
+        "tipo_equipamento": "motor",
+        "equipamento_id": "Motor MT-042",
+        "tipo_anomalia": "preventiva",
+        "severidade": "leve",
+        "resumo_alerta": "Sem alerta crítico. Foi observada tendência leve de temperatura nas duas últimas rondas."
+      },
+      "answer": "Situação atual: Sem alerta crítico. Foi observada tendência leve de temperatura nas duas últimas rondas.\n\nVerificações recomendadas:\n- Manutenção preventiva trimestral A rotina trimestral inclui limpeza do sistema de ventilação, verificação do torque das conexões conforme tabela aplicável, inspeção do acoplamento, avaliação de alinhamento, conferência da base e revisão das tendências de corrente, temperatura e vibração. [manual_motor_mt.md > Manutenção preventiva trimestral]\n- Inspeção preventiva semanal Na inspeção semanal, registre ruído, temperatura dos mancais, temperatura do enrolamento, vibração global, corrente por fase, limpeza das entradas de ar e condição aparente de cabos e fixações. [manual_motor_mt.md > Inspeção preventiva semanal]\n- Registro e rastreabilidade da manutenção Cada ordem deve registrar ativo, sintoma, diagnóstico, ação executada, componente e lote quando aplicável, medições antes e depois, responsáveis e horário. [ficha_manutencao_mt.md > Registro e rastreabilidade da manutenção]\n\nConfiança: alta — resposta limitada às evidências recuperadas e ao contexto operacional.",
+      "sources": [
+        "manual_motor_mt.md > Manutenção preventiva trimestral",
+        "manual_motor_mt.md > Inspeção preventiva semanal",
+        "ficha_manutencao_mt.md > Registro e rastreabilidade da manutenção"
+      ],
+      "confidence": "média",
+      "faithfulness_proxy": 0.6666666666666666,
+      "generation_mode": "guardrail_fallback",
+      "validation_issues": [
+        "sustentação documental abaixo de 0,60"
+      ]
+    }
+  ],
+  "demonstracao_memoria": {
+    "pergunta_continuacao": "E o que devo registrar ao concluir essa manutenção?",
+    "memoria_anterior_injetada": true,
+    "turnos_armazenados": 2,
+    "answer": "Situação atual: Sem alerta crítico. Foi observada tendência leve de temperatura nas duas últimas rondas.\n\nVerificações recomendadas:\n- Registro e rastreabilidade da manutenção Cada ordem deve registrar ativo, sintoma, diagnóstico, ação executada, componente e lote quando aplicável, medições antes e depois, responsáveis e horário. [ficha_manutencao_mt.md > Registro e rastreabilidade da manutenção]\n- Manutenção preventiva trimestral A rotina trimestral inclui limpeza do sistema de ventilação, verificação do torque das conexões conforme tabela aplicável, inspeção do acoplamento, avaliação de alinhamento, conferência da base e revisão das tendências de corrente, temperatura e vibração. [manual_motor_mt.md > Manutenção preventiva trimestral]\n- Com o motor desenergizado, inspecione a caixa de ligação e meça resistência de isolamento quando previsto no plano. [manual_motor_mt.md > Manutenção preventiva trimestral]\n\nConfiança: alta — resposta limitada às evidências recuperadas e ao contexto operacional.",
+    "sources": [
+      "manual_motor_mt.md > Manutenção preventiva trimestral",
+      "ficha_manutencao_mt.md > Registro e rastreabilidade da manutenção",
+      "manual_motor_mt.md > Inspeção preventiva semanal"
+    ],
+    "confidence": "média",
+    "faithfulness_proxy": 0.6666666666666666,
+    "generation_mode": "guardrail_fallback",
+    "validation_issues": [
+      "sustentação documental abaixo de 0,60"
+    ]
+  }
+}

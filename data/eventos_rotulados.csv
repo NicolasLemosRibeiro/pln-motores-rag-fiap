@@ -1,0 +1,201 @@
+﻿event_id,texto,categoria
+EVT-0045,medida resistência de isolamento na parada programada no conjunto principal.,manutenção preventiva
+EVT-0100,queda de resistência de isolamento do enrolamento no Motor MT-042.,anomalia elétrica
+EVT-0186,correntes equilibradas e temperatura normal registrado pelo operador.,operação normal
+EVT-0125,indício de desbalanceamento no espectro durante o turno da manhã.,anomalia mecânica
+EVT-0123,desalinhamento observado no acoplamento durante o turno da manhã.,anomalia mecânica
+EVT-0164,equipamento disponível sem alarmes ativos registrado pelo operador.,operação normal
+EVT-0010,corrigida conexão queimada no borne após análise de tendência.,manutenção corretiva
+EVT-0171,partida concluída e parâmetros estabilizados no conjunto principal.,operação normal
+EVT-0199,vibração sem alteração durante o turno no conjunto principal.,operação normal
+EVT-0115,proteção de sobrecorrente atuou durante partida com ordem de serviço aberta.,anomalia elétrica
+EVT-0004,corrigida conexão queimada no borne após análise de tendência.,manutenção corretiva
+EVT-0052,alinhamento conferido na rotina preventiva registrado pelo operador.,manutenção preventiva
+EVT-0016,corrigida conexão queimada no borne após análise de tendência.,manutenção corretiva
+EVT-0165,partida concluída e parâmetros estabilizados no conjunto principal.,operação normal
+EVT-0041,realizada inspeção preventiva semanal no conjunto principal.,manutenção preventiva
+EVT-0087,corrente elevada e desequilíbrio entre fases com ordem de serviço aberta.,anomalia elétrica
+EVT-0168,correntes equilibradas e temperatura normal registrado pelo operador.,operação normal
+EVT-0022,corrigida conexão queimada no borne após análise de tendência.,manutenção corretiva
+EVT-0105,corrente elevada e desequilíbrio entre fases com ordem de serviço aberta.,anomalia elétrica
+EVT-0107,sobretensão intermitente registrada no painel com ordem de serviço aberta.,anomalia elétrica
+EVT-0027,trocado ventilador danificado após parada durante o turno da manhã.,manutenção corretiva
+EVT-0058,alinhamento conferido na rotina preventiva registrado pelo operador.,manutenção preventiva
+EVT-0062,verificado torque das conexões conforme plano registrado pelo operador.,manutenção preventiva
+EVT-0030,substituído sensor defeituoso após alarme após análise de tendência.,manutenção corretiva
+EVT-0180,correntes equilibradas e temperatura normal registrado pelo operador.,operação normal
+EVT-0162,correntes equilibradas e temperatura normal registrado pelo operador.,operação normal
+EVT-0073,limpeza trimestral das entradas de ar no conjunto principal.,manutenção preventiva
+EVT-0046,alinhamento conferido na rotina preventiva registrado pelo operador.,manutenção preventiva
+EVT-0176,equipamento disponível sem alarmes ativos registrado pelo operador.,operação normal
+EVT-0132,pressão de óleo baixa no sistema de lubrificação após análise de tendência.,anomalia mecânica
+EVT-0106,queda de resistência de isolamento do enrolamento no Motor MT-042.,anomalia elétrica
+EVT-0151,vibração elevada no mancal lado acoplado durante o turno da manhã.,anomalia mecânica
+EVT-0067,limpeza trimestral das entradas de ar no conjunto principal.,manutenção preventiva
+EVT-0096,borne aquecido com tensão desequilibrada no Motor MT-042.,anomalia elétrica
+EVT-0029,executado reparo emergencial no acoplamento durante o turno da manhã.,manutenção corretiva
+EVT-0024,substituído sensor defeituoso após alarme após análise de tendência.,manutenção corretiva
+EVT-0079,limpeza trimestral das entradas de ar no conjunto principal.,manutenção preventiva
+EVT-0080,verificado torque das conexões conforme plano registrado pelo operador.,manutenção preventiva
+EVT-0013,substituído rolamento após falha confirmada durante o turno da manhã.,manutenção corretiva
+EVT-0131,indício de desbalanceamento no espectro durante o turno da manhã.,anomalia mecânica
+EVT-0085,proteção de sobrecorrente atuou durante partida com ordem de serviço aberta.,anomalia elétrica
+EVT-0028,corrigida conexão queimada no borne após análise de tendência.,manutenção corretiva
+EVT-0099,corrente elevada e desequilíbrio entre fases com ordem de serviço aberta.,anomalia elétrica
+EVT-0197,motor operando estável dentro do baseline no conjunto principal.,operação normal
+EVT-0144,pressão de óleo baixa no sistema de lubrificação após análise de tendência.,anomalia mecânica
+EVT-0011,executado reparo emergencial no acoplamento durante o turno da manhã.,manutenção corretiva
+EVT-0140,ruído metálico e aquecimento do rolamento após análise de tendência.,anomalia mecânica
+EVT-0126,pressão de óleo baixa no sistema de lubrificação após análise de tendência.,anomalia mecânica
+EVT-0043,limpeza trimestral das entradas de ar no conjunto principal.,manutenção preventiva
+EVT-0051,medida resistência de isolamento na parada programada no conjunto principal.,manutenção preventiva
+EVT-0113,sobretensão intermitente registrada no painel com ordem de serviço aberta.,anomalia elétrica
+EVT-0112,queda de resistência de isolamento do enrolamento no Motor MT-042.,anomalia elétrica
+EVT-0196,ronda sem desvios ou ruídos anormais registrado pelo operador.,operação normal
+EVT-0122,ruído metálico e aquecimento do rolamento após análise de tendência.,anomalia mecânica
+EVT-0005,executado reparo emergencial no acoplamento durante o turno da manhã.,manutenção corretiva
+EVT-0053,realizada inspeção preventiva semanal no conjunto principal.,manutenção preventiva
+EVT-0190,ronda sem desvios ou ruídos anormais registrado pelo operador.,operação normal
+EVT-0074,verificado torque das conexões conforme plano registrado pelo operador.,manutenção preventiva
+EVT-0109,proteção de sobrecorrente atuou durante partida com ordem de serviço aberta.,anomalia elétrica
+EVT-0006,substituído sensor defeituoso após alarme após análise de tendência.,manutenção corretiva
+EVT-0061,limpeza trimestral das entradas de ar no conjunto principal.,manutenção preventiva
+EVT-0184,ronda sem desvios ou ruídos anormais registrado pelo operador.,operação normal
+EVT-0129,desalinhamento observado no acoplamento durante o turno da manhã.,anomalia mecânica
+EVT-0127,vibração elevada no mancal lado acoplado durante o turno da manhã.,anomalia mecânica
+EVT-0008,reparado cabo rompido e motor liberado após análise de tendência.,manutenção corretiva
+EVT-0031,substituído rolamento após falha confirmada durante o turno da manhã.,manutenção corretiva
+EVT-0040,corrigida conexão queimada no borne após análise de tendência.,manutenção corretiva
+EVT-0047,realizada inspeção preventiva semanal no conjunto principal.,manutenção preventiva
+EVT-0166,ronda sem desvios ou ruídos anormais registrado pelo operador.,operação normal
+EVT-0003,trocado ventilador danificado após parada durante o turno da manhã.,manutenção corretiva
+EVT-0158,ruído metálico e aquecimento do rolamento após análise de tendência.,anomalia mecânica
+EVT-0157,vibração elevada no mancal lado acoplado durante o turno da manhã.,anomalia mecânica
+EVT-0090,borne aquecido com tensão desequilibrada no Motor MT-042.,anomalia elétrica
+EVT-0108,borne aquecido com tensão desequilibrada no Motor MT-042.,anomalia elétrica
+EVT-0154,folga mecânica detectada na base após análise de tendência.,anomalia mecânica
+EVT-0198,correntes equilibradas e temperatura normal registrado pelo operador.,operação normal
+EVT-0048,executada lubrificação programada dos mancais registrado pelo operador.,manutenção preventiva
+EVT-0120,borne aquecido com tensão desequilibrada no Motor MT-042.,anomalia elétrica
+EVT-0173,motor operando estável dentro do baseline no conjunto principal.,operação normal
+EVT-0078,executada lubrificação programada dos mancais registrado pelo operador.,manutenção preventiva
+EVT-0086,falha elétrica suspeita na fase B no Motor MT-042.,anomalia elétrica
+EVT-0082,queda de resistência de isolamento do enrolamento no Motor MT-042.,anomalia elétrica
+EVT-0039,trocado ventilador danificado após parada durante o turno da manhã.,manutenção corretiva
+EVT-0185,motor operando estável dentro do baseline no conjunto principal.,operação normal
+EVT-0014,reparado cabo rompido e motor liberado após análise de tendência.,manutenção corretiva
+EVT-0101,sobretensão intermitente registrada no painel com ordem de serviço aberta.,anomalia elétrica
+EVT-0023,executado reparo emergencial no acoplamento durante o turno da manhã.,manutenção corretiva
+EVT-0065,realizada inspeção preventiva semanal no conjunto principal.,manutenção preventiva
+EVT-0034,corrigida conexão queimada no borne após análise de tendência.,manutenção corretiva
+EVT-0001,substituído rolamento após falha confirmada durante o turno da manhã.,manutenção corretiva
+EVT-0149,indício de desbalanceamento no espectro durante o turno da manhã.,anomalia mecânica
+EVT-0191,motor operando estável dentro do baseline no conjunto principal.,operação normal
+EVT-0056,verificado torque das conexões conforme plano registrado pelo operador.,manutenção preventiva
+EVT-0038,reparado cabo rompido e motor liberado após análise de tendência.,manutenção corretiva
+EVT-0178,ronda sem desvios ou ruídos anormais registrado pelo operador.,operação normal
+EVT-0160,folga mecânica detectada na base após análise de tendência.,anomalia mecânica
+EVT-0083,sobretensão intermitente registrada no painel com ordem de serviço aberta.,anomalia elétrica
+EVT-0035,executado reparo emergencial no acoplamento durante o turno da manhã.,manutenção corretiva
+EVT-0124,folga mecânica detectada na base após análise de tendência.,anomalia mecânica
+EVT-0145,vibração elevada no mancal lado acoplado durante o turno da manhã.,anomalia mecânica
+EVT-0104,falha elétrica suspeita na fase B no Motor MT-042.,anomalia elétrica
+EVT-0121,vibração elevada no mancal lado acoplado durante o turno da manhã.,anomalia mecânica
+EVT-0130,folga mecânica detectada na base após análise de tendência.,anomalia mecânica
+EVT-0116,falha elétrica suspeita na fase B no Motor MT-042.,anomalia elétrica
+EVT-0002,reparado cabo rompido e motor liberado após análise de tendência.,manutenção corretiva
+EVT-0071,realizada inspeção preventiva semanal no conjunto principal.,manutenção preventiva
+EVT-0033,trocado ventilador danificado após parada durante o turno da manhã.,manutenção corretiva
+EVT-0133,vibração elevada no mancal lado acoplado durante o turno da manhã.,anomalia mecânica
+EVT-0174,correntes equilibradas e temperatura normal registrado pelo operador.,operação normal
+EVT-0114,borne aquecido com tensão desequilibrada no Motor MT-042.,anomalia elétrica
+EVT-0049,limpeza trimestral das entradas de ar no conjunto principal.,manutenção preventiva
+EVT-0181,vibração sem alteração durante o turno no conjunto principal.,operação normal
+EVT-0182,equipamento disponível sem alarmes ativos registrado pelo operador.,operação normal
+EVT-0077,realizada inspeção preventiva semanal no conjunto principal.,manutenção preventiva
+EVT-0141,desalinhamento observado no acoplamento durante o turno da manhã.,anomalia mecânica
+EVT-0088,queda de resistência de isolamento do enrolamento no Motor MT-042.,anomalia elétrica
+EVT-0139,vibração elevada no mancal lado acoplado durante o turno da manhã.,anomalia mecânica
+EVT-0175,vibração sem alteração durante o turno no conjunto principal.,operação normal
+EVT-0193,vibração sem alteração durante o turno no conjunto principal.,operação normal
+EVT-0020,reparado cabo rompido e motor liberado após análise de tendência.,manutenção corretiva
+EVT-0150,pressão de óleo baixa no sistema de lubrificação após análise de tendência.,anomalia mecânica
+EVT-0111,corrente elevada e desequilíbrio entre fases com ordem de serviço aberta.,anomalia elétrica
+EVT-0007,substituído rolamento após falha confirmada durante o turno da manhã.,manutenção corretiva
+EVT-0189,partida concluída e parâmetros estabilizados no conjunto principal.,operação normal
+EVT-0179,motor operando estável dentro do baseline no conjunto principal.,operação normal
+EVT-0134,ruído metálico e aquecimento do rolamento após análise de tendência.,anomalia mecânica
+EVT-0066,executada lubrificação programada dos mancais registrado pelo operador.,manutenção preventiva
+EVT-0135,desalinhamento observado no acoplamento durante o turno da manhã.,anomalia mecânica
+EVT-0152,ruído metálico e aquecimento do rolamento após análise de tendência.,anomalia mecânica
+EVT-0183,partida concluída e parâmetros estabilizados no conjunto principal.,operação normal
+EVT-0146,ruído metálico e aquecimento do rolamento após análise de tendência.,anomalia mecânica
+EVT-0110,falha elétrica suspeita na fase B no Motor MT-042.,anomalia elétrica
+EVT-0136,folga mecânica detectada na base após análise de tendência.,anomalia mecânica
+EVT-0064,alinhamento conferido na rotina preventiva registrado pelo operador.,manutenção preventiva
+EVT-0036,substituído sensor defeituoso após alarme após análise de tendência.,manutenção corretiva
+EVT-0195,partida concluída e parâmetros estabilizados no conjunto principal.,operação normal
+EVT-0037,substituído rolamento após falha confirmada durante o turno da manhã.,manutenção corretiva
+EVT-0192,correntes equilibradas e temperatura normal registrado pelo operador.,operação normal
+EVT-0102,borne aquecido com tensão desequilibrada no Motor MT-042.,anomalia elétrica
+EVT-0128,ruído metálico e aquecimento do rolamento após análise de tendência.,anomalia mecânica
+EVT-0153,desalinhamento observado no acoplamento durante o turno da manhã.,anomalia mecânica
+EVT-0147,desalinhamento observado no acoplamento durante o turno da manhã.,anomalia mecânica
+EVT-0055,limpeza trimestral das entradas de ar no conjunto principal.,manutenção preventiva
+EVT-0017,executado reparo emergencial no acoplamento durante o turno da manhã.,manutenção corretiva
+EVT-0169,vibração sem alteração durante o turno no conjunto principal.,operação normal
+EVT-0103,proteção de sobrecorrente atuou durante partida com ordem de serviço aberta.,anomalia elétrica
+EVT-0081,corrente elevada e desequilíbrio entre fases com ordem de serviço aberta.,anomalia elétrica
+EVT-0009,trocado ventilador danificado após parada durante o turno da manhã.,manutenção corretiva
+EVT-0177,partida concluída e parâmetros estabilizados no conjunto principal.,operação normal
+EVT-0015,trocado ventilador danificado após parada durante o turno da manhã.,manutenção corretiva
+EVT-0084,borne aquecido com tensão desequilibrada no Motor MT-042.,anomalia elétrica
+EVT-0057,medida resistência de isolamento na parada programada no conjunto principal.,manutenção preventiva
+EVT-0143,indício de desbalanceamento no espectro durante o turno da manhã.,anomalia mecânica
+EVT-0070,alinhamento conferido na rotina preventiva registrado pelo operador.,manutenção preventiva
+EVT-0172,ronda sem desvios ou ruídos anormais registrado pelo operador.,operação normal
+EVT-0119,sobretensão intermitente registrada no painel com ordem de serviço aberta.,anomalia elétrica
+EVT-0167,motor operando estável dentro do baseline no conjunto principal.,operação normal
+EVT-0063,medida resistência de isolamento na parada programada no conjunto principal.,manutenção preventiva
+EVT-0137,indício de desbalanceamento no espectro durante o turno da manhã.,anomalia mecânica
+EVT-0044,verificado torque das conexões conforme plano registrado pelo operador.,manutenção preventiva
+EVT-0156,pressão de óleo baixa no sistema de lubrificação após análise de tendência.,anomalia mecânica
+EVT-0019,substituído rolamento após falha confirmada durante o turno da manhã.,manutenção corretiva
+EVT-0069,medida resistência de isolamento na parada programada no conjunto principal.,manutenção preventiva
+EVT-0054,executada lubrificação programada dos mancais registrado pelo operador.,manutenção preventiva
+EVT-0091,proteção de sobrecorrente atuou durante partida com ordem de serviço aberta.,anomalia elétrica
+EVT-0095,sobretensão intermitente registrada no painel com ordem de serviço aberta.,anomalia elétrica
+EVT-0042,executada lubrificação programada dos mancais registrado pelo operador.,manutenção preventiva
+EVT-0094,queda de resistência de isolamento do enrolamento no Motor MT-042.,anomalia elétrica
+EVT-0163,vibração sem alteração durante o turno no conjunto principal.,operação normal
+EVT-0117,corrente elevada e desequilíbrio entre fases com ordem de serviço aberta.,anomalia elétrica
+EVT-0072,executada lubrificação programada dos mancais registrado pelo operador.,manutenção preventiva
+EVT-0200,equipamento disponível sem alarmes ativos registrado pelo operador.,operação normal
+EVT-0026,reparado cabo rompido e motor liberado após análise de tendência.,manutenção corretiva
+EVT-0060,executada lubrificação programada dos mancais registrado pelo operador.,manutenção preventiva
+EVT-0188,equipamento disponível sem alarmes ativos registrado pelo operador.,operação normal
+EVT-0075,medida resistência de isolamento na parada programada no conjunto principal.,manutenção preventiva
+EVT-0059,realizada inspeção preventiva semanal no conjunto principal.,manutenção preventiva
+EVT-0170,equipamento disponível sem alarmes ativos registrado pelo operador.,operação normal
+EVT-0194,equipamento disponível sem alarmes ativos registrado pelo operador.,operação normal
+EVT-0018,substituído sensor defeituoso após alarme após análise de tendência.,manutenção corretiva
+EVT-0050,verificado torque das conexões conforme plano registrado pelo operador.,manutenção preventiva
+EVT-0148,folga mecânica detectada na base após análise de tendência.,anomalia mecânica
+EVT-0093,corrente elevada e desequilíbrio entre fases com ordem de serviço aberta.,anomalia elétrica
+EVT-0159,desalinhamento observado no acoplamento durante o turno da manhã.,anomalia mecânica
+EVT-0161,motor operando estável dentro do baseline no conjunto principal.,operação normal
+EVT-0076,alinhamento conferido na rotina preventiva registrado pelo operador.,manutenção preventiva
+EVT-0142,folga mecânica detectada na base após análise de tendência.,anomalia mecânica
+EVT-0021,trocado ventilador danificado após parada durante o turno da manhã.,manutenção corretiva
+EVT-0097,proteção de sobrecorrente atuou durante partida com ordem de serviço aberta.,anomalia elétrica
+EVT-0032,reparado cabo rompido e motor liberado após análise de tendência.,manutenção corretiva
+EVT-0138,pressão de óleo baixa no sistema de lubrificação após análise de tendência.,anomalia mecânica
+EVT-0118,queda de resistência de isolamento do enrolamento no Motor MT-042.,anomalia elétrica
+EVT-0187,vibração sem alteração durante o turno no conjunto principal.,operação normal
+EVT-0012,substituído sensor defeituoso após alarme após análise de tendência.,manutenção corretiva
+EVT-0068,verificado torque das conexões conforme plano registrado pelo operador.,manutenção preventiva
+EVT-0155,indício de desbalanceamento no espectro durante o turno da manhã.,anomalia mecânica
+EVT-0089,sobretensão intermitente registrada no painel com ordem de serviço aberta.,anomalia elétrica
+EVT-0092,falha elétrica suspeita na fase B no Motor MT-042.,anomalia elétrica
+EVT-0025,substituído rolamento após falha confirmada durante o turno da manhã.,manutenção corretiva
+EVT-0098,falha elétrica suspeita na fase B no Motor MT-042.,anomalia elétrica
