@@ -13,19 +13,16 @@ Projeto demonstrável das Sprints 3 e 4 para motores elétricos: geração de na
 - `data/perguntas_troubleshooting.json`: 20 perguntas, respostas e seções relevantes.
 - `data/documentos_tecnicos/`: manual, datasheet e ficha de manutenção sintéticos.
 - `docs/relatorio_final_unificado.docx`: documento técnico final.
-- `docs/relatorio_final_unificado.md`: versão textual do relatório.
 - `outputs/`: resultados e métricas reproduzidos, incluindo a execução Qwen 3B com guardrails no Colab.
+- `src/pln_motores/`: código de apoio importado pelos dois notebooks.
 
 ## Execução local
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
-python scripts\generate_data.py
-python scripts\run_sprint3.py
-python scripts\run_sprint4.py
-python -m pytest -q
+python -m pip install -r requirements-colab.txt
+jupyter notebook
 ```
 
 Os notebooks já foram executados e salvos com as saídas. Para execução offline rápida, o RAG usa vetores TF-IDF e índice `NearestNeighbors`. A execução registrada no Colab utilizou `paraphrase-multilingual-MiniLM-L12-v2`, FAISS e `Qwen/Qwen2.5-3B-Instruct` em GPU T4.
@@ -65,7 +62,7 @@ pln_motores_rag/
 ├── data/
 ├── docs/
 ├── outputs/
-├── scripts/
 ├── src/pln_motores/
-└── tests/
+├── requirements.txt
+└── requirements-colab.txt
 ```
